@@ -1,0 +1,9 @@
+.realestate {
+    max-width: 880px;
+}
+
+@media screen and (max-width: 918px) {
+    .realestate {
+        padding: 0 19px;
+    }
+}

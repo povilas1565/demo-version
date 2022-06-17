@@ -1,0 +1,13 @@
+.error-popup__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+@media screen and (max-width: 468px) {
+    .error-popup__title {
+        font-size: 14px;
+        line-height: 1.22;
+    }
+}
