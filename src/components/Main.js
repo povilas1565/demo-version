@@ -9,23 +9,23 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick, cards, onC
 
     return (
         <main>
-            <section className="profile page__container">
+            <section className="profile page_container">
                 <div
-                    className="profile__avatar appear"
+                    className="profile_avatar appear"
                     style={{ backgroundImage: `url(${currentUser.avatar})` }}
                     onClick={onEditAvatar}
                 ></div>
-                <div className="profile__info">
-                    <div className="profile__container">
-                        <h1 className="profile__name appear text-cut">{currentUser.name}</h1>
+                <div className="profile_info">
+                    <div className="profile_container">
+                        <h1 className="profile_name appear text-cut">{currentUser.name}</h1>
                         <button type="button" aria-label="Edit" className="profile__btn-edit" onClick={onEditProfile}></button>
                     </div>
-                    <p className="profile__about appear text-cut">{currentUser.about}</p>
+                    <p className="profile_about appear text-cut">{currentUser.about}</p>
                 </div>
-                <button type="button" aria-label="Add" className="profile__btn-add" onClick={onAddPlace}> </button>
+                <button type="button" aria-label="Add" className="profile_btn-add" onClick={onAddPlace}> </button>
             </section>
 
-            <section className="places page__container">
+            <section className="places page_container">
                 <ul className="cards">
                     {cards.map((card) => {
                         return (

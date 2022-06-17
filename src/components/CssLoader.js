@@ -3,7 +3,7 @@ const CssLoader = React.memo(({isLoading})=>{
     return (
         isLoading && (
             <div className="cssload">
-                <div className="cssload__whirlpool"></div>
+                <div className="cssload_whirlpool"></div>
             </div>
         )
     );

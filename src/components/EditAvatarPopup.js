@@ -32,11 +32,11 @@ function EditAvatarPopup({isOpen, onClose, onUpdateAvatar, isLoading }) {
                         name="link"
                         value={values.link || ""}
                         placeholder="Ссылка на картинку"
-                        className={`form__input ${errors.link ? 'form__input_type_error' : ''}`}
+                        className={`form_input ${errors.link ? 'form_input_type_error' : ''}`}
                         required
                         onChange={handleChange}
                     />
-                    <span className={`form__input-error ${errors.link ? 'form__input-error_active' : ''}`}>{errors.link}</span>
+                    <span className={`form_input-error ${errors.link ? 'form_input-error_active' : ''}`}>{errors.link}</span>
                 </label>
             </fieldset>
         </PopupWithForm>

@@ -28,20 +28,20 @@ function EditProfilePopup({ isOpen, onClose, onUpdateUser, isLoading }) {
             onSubmit={handleSubmit}
             buttonSubmitState={isValid}
         >
-            <fieldset className="form__set">
-                <label className="form__field">
+            <fieldset className="form_set">
+                <label className="form_field">
                     <input
                         type="text"
                         name="name"
                         value={values.name || ""}
                         placeholder="Имя"
-                        className={`form__input ${errors.name ? 'form__input_type_error' : ''}`}
+                        className={`form_input ${errors.name ? 'form__input_type_error' : ''}`}
                         required
                         minLength="2"
                         maxLength="40"
                         onChange={handleChange}
                     />
-                    <span className={`form__input-error ${errors.name ? 'form__input-error_active' : ''}`}>{errors.name}</span>
+                    <span className={`form_input-error ${errors.name ? 'form_input-error_active' : ''}`}>{errors.name}</span>
                 </label>
                 <label className="form__field">
                     <input
@@ -49,13 +49,13 @@ function EditProfilePopup({ isOpen, onClose, onUpdateUser, isLoading }) {
                         name="about"
                         value={values.about || ""}
                         placeholder="О себе"
-                        className={`form__input ${errors.about ? 'form__input_type_error' : ''}`}
+                        className={`form_input ${errors.about ? 'form_input_type_error' : ''}`}
                         required
                         minLength="2"
                         maxLength="200"
                         onChange={handleChange}
                     />
-                    <span className={`form__input-error ${errors.about ? 'form__input-error_active' : ''}`}>{errors.about}</span>
+                    <span className={`form_input-error ${errors.about ? 'form_input-error_active' : ''}`}>{errors.about}</span>
                 </label>
             </fieldset>
         </PopupWithForm>

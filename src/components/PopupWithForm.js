@@ -15,7 +15,7 @@ function PopupWithForm({
         <div
             className={`popup ${isOpen ? "popup_opened" : ""}`}
         >
-            <div className="popup__container popup__container_form">
+            <div className="popup_container popup_container_form">
                 <h2 className="title">{title}</h2>
                 <button
                     type="button"
@@ -32,7 +32,7 @@ function PopupWithForm({
                     {children}
                     <button
                         type="submit"
-                        className={`form__btn-submit ${!buttonSubmitState ? "form__btn-submit_inactive" : ""}`}
+                        className={`form_btn-submit ${!buttonSubmitState ? "form_btn-submit_inactive" : ""}`}
                         disabled={!buttonSubmitState ? true : ""}
                     >
                         {buttonSubmitText}

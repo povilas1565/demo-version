@@ -22,7 +22,7 @@ function AuthForm({
     }
 
     return (
-        <div className="auth page__container appear">
+        <div className="auth page_container appear">
             <h2 className="title title_place_auth">{title}</h2>
 
             <form
@@ -31,34 +31,34 @@ function AuthForm({
                 onSubmit={handleSubmit}
                 noValidate
             >
-                <fieldset className="form__set">
-                    <label className="form__field">
+                <fieldset className="form_set">
+                    <label className="form_field">
                         <input
                             type="email"
                             name="email"
                             value={values.email || ""}
                             placeholder="Email"
-                            className={`form__input form__input_type_auth ${errors.email ? 'form__input_type_error' : ''}`}
+                            className={`form_input form__input_type_auth ${errors.email ? 'form_input_type_error' : ''}`}
                             required
                             minLength="2"
                             maxLength="40"
                             onChange={handleChange}
                         />
-                        <span className={`form__input-error ${errors.email ? 'form__input-error_active' : ''}`}>{errors.email}</span>
+                        <span className={`form_input-error ${errors.email ? 'form_input-error_active' : ''}`}>{errors.email}</span>
                     </label>
-                    <label className="form__field">
+                    <label className="form_field">
                         <input
                             type="password"
                             name="password"
                             value={values.password || ""}
                             placeholder="Пароль"
-                            className={`form__input form__input_type_auth ${errors.password ? 'form__input_type_error' : ''}`}
+                            className={`form_input form_input_type_auth ${errors.password ? 'form_input_type_error' : ''}`}
                             required
                             minLength="8"
                             maxLength="40"
                             onChange={handleChange}
                         />
-                        <span className={`form__input-error ${errors.password ? 'form__input-error_active' : ''}`}>{errors.password}</span>
+                        <span className={`form_input-error ${errors.password ? 'form_input-error_active' : ''}`}>{errors.password}</span>
                     </label>
                 </fieldset>
 

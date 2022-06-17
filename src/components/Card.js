@@ -5,10 +5,10 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
     const currentUser = React.useContext(CurrentUserContext);
 
     const isOwn = card.owner._id === currentUser._id;
-    const cardButtonRemoveClassName = `cards__btn-remove ${isOwn ? 'cards__btn-remove_active': ''}`;
+    const cardButtonRemoveClassName = `cards_btn-remove ${isOwn ? 'cards_btn-remove_active': ''}`;
 
     const isLiked = card.likes.some((userWhoLiked)=>userWhoLiked._id === currentUser._id);
-    const cardButtonLikeClassName = `cards__btn-like ${isLiked ? 'cards__btn-like_active appear': ''}`;
+    const cardButtonLikeClassName = `cards_btn-like ${isLiked ? 'cards_btn-like_active appear': ''}`;
 
     function handleClick() {
         onCardClick(card);
@@ -23,11 +23,11 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
     }
 
     return (
-        <li className="cards__item appear">
+        <li className="cards_item appear">
             <img
-                className="cards__image"
+                className="cards_image"
                 src={`${card.link}`}
-                alt={`Изображение ${card.name}`}
+                alt={`Picture ${card.name}`}
                 onClick={handleClick}
             />
             <button
@@ -36,16 +36,16 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
                 className={cardButtonRemoveClassName}
                 onClick={handleDeleteClick}
             ></button>
-            <div className="cards__description">
-                <h2 className="cards__title text-cut">{card.name}</h2>
-                <div className="cards__likes-container">
+            <div className="cards_description">
+                <h2 className="cards_title text-cut">{card.name}</h2>
+                <div className="cards_likes-container">
                     <button
                         type="button"
                         aria-label="Liked"
                         className={cardButtonLikeClassName}
                         onClick={handleLikeClick}
                     ></button>
-                    <div className="cards__likes-counter appear">{card.likes.length}</div>
+                    <div className="cards_likes-counter appear">{card.likes.length}</div>
                 </div>
             </div>
         </li>
