@@ -4,9 +4,9 @@
     }
 }
 
-.cssload__whirlpool,
-.cssload__whirlpool::before,
-.cssload__whirlpool::after {
+.cssload_whirlpool,
+.cssload_whirlpool::before,
+.cssload_whirlpool::after {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,14 +19,14 @@
     -moz-border-radius: 974px;
 }
 
-.cssload__whirlpool {
+.cssload_whirlpool {
     margin: -24px 0 0 -24px;
     height: 49px;
     width: 49px;
     animation: cssload-rotate 1150ms linear infinite;
 }
 
-.cssload__whirlpool::before {
+.cssload_whirlpool::before {
     content: "";
     margin: -22px 0 0 -22px;
     height: 43px;
@@ -34,7 +34,7 @@
     animation: cssload-rotate 1150ms linear infinite;
 }
 
-.cssload__whirlpool::after {
+.cssload_whirlpool::after {
     content: "";
     margin: -28px 0 0 -28px;
     height: 55px;

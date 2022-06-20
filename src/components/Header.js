@@ -32,7 +32,7 @@ function Header({isLoggedIn, userEmail, onSignOut, isLoading}) {
                 <img
                     className="header_logo appear"
                     src={headerLogo}
-                    alt="Логотип сайта с надписью Недвижимость английскими буквами"
+                    alt="Логотип сайта с надписью Вивт английскими буквами"
                 />
                 <button onClick={handleCloseMenu} type="button" aria-label="Close menu" className={`btn-close btn-close_place_header ${isColumnMenu ? "btn-close_active" : ""}`}></button>
             </div>
@@ -42,7 +42,7 @@ function Header({isLoggedIn, userEmail, onSignOut, isLoading}) {
                 <div className="header_burger-line"></div>
             </div>
             { (!isLoading || isLocationMain) &&
-                <nav className={`header__nav-container appear ${isLoggedIn && !isColumnMenu ? "header_nav-container_type_inactive" : ""} ${isColumnMenu ? "header_nav-container_type_column" : ""} `}>
+                <nav className={`header_nav-container appear ${isLoggedIn && !isColumnMenu ? "header_nav-container_type_inactive" : ""} ${isColumnMenu ? "header_nav-container_type_column" : ""} `}>
                     <p className="header_email">{isLoggedIn ? userEmail : ""}</p>
                     {!isLocationSignIn ?
                         <NavLink onClick={!isLoggedIn ? handleSignIn : handleSignOut} className={`header__nav-item ${isLocationMain ? "header_nav-item_active" : ""}`} to={"/sign-in"}>{isLoggedIn ? "logout" : "login"}</NavLink>

@@ -1,9 +1,9 @@
-.realestate {
+.vivt {
     max-width: 880px;
 }
 
 @media screen and (max-width: 918px) {
-    .realestate {
+    .vivt {
         padding: 0 19px;
     }
 }

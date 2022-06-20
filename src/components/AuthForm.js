@@ -38,7 +38,7 @@ function AuthForm({
                             name="email"
                             value={values.email || ""}
                             placeholder="Email"
-                            className={`form_input form__input_type_auth ${errors.email ? 'form_input_type_error' : ''}`}
+                            className={`form_input form_input_type_auth ${errors.email ? 'form_input_type_error' : ''}`}
                             required
                             minLength="2"
                             maxLength="40"
@@ -65,16 +65,16 @@ function AuthForm({
                 {
                     <button
                         type="submit"
-                        className={`form__btn-submit form__btn-submit_type_auth ${!isValid ? "form__btn-submit_inactive" : ""}`}
+                        className={`form_btn-submit form_btn-submit_type_auth ${!isValid ? "form_btn-submit_inactive" : ""}`}
                         disabled={!isValid ? true : ""}
                     >
                         {buttonSubmitText}
                     </button>
                 }
                 {isLocationSignUp && (
-                    <div className="form__auth-container">
-                        <p className="form__auth-text">Уже зарегистрированы?&nbsp;</p>
-                        <Link className="form__auth-link" to={"/sign-in"}>Войти</Link>
+                    <div className="form_auth-container">
+                        <p className="form_auth-text">Уже зарегистрированы?&nbsp;</p>
+                        <Link className="form_auth-link" to={"/sign-in"}>Войти</Link>
                     </div>
                 )}
             </form>

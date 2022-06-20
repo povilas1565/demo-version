@@ -35,7 +35,7 @@ function EditProfilePopup({ isOpen, onClose, onUpdateUser, isLoading }) {
                         name="name"
                         value={values.name || ""}
                         placeholder="Имя"
-                        className={`form_input ${errors.name ? 'form__input_type_error' : ''}`}
+                        className={`form_input ${errors.name ? 'form_input_type_error' : ''}`}
                         required
                         minLength="2"
                         maxLength="40"
@@ -43,7 +43,7 @@ function EditProfilePopup({ isOpen, onClose, onUpdateUser, isLoading }) {
                     />
                     <span className={`form_input-error ${errors.name ? 'form_input-error_active' : ''}`}>{errors.name}</span>
                 </label>
-                <label className="form__field">
+                <label className="form_field">
                     <input
                         type="text"
                         name="about"

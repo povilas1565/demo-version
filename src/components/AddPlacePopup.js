@@ -25,32 +25,32 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, isLoading }) {
             onSubmit={handleAddPlaceSubmit}
             buttonSubmitState={isValid}
         >
-            <fieldset className="form__set">
-                <label className="form__field">
+            <fieldset className="form_set">
+                <label className="form_field">
                     <input
                         type="text"
                         name="title"
                         value={values.title || ""}
                         placeholder="Название"
-                        className={`form__input ${errors.title ? 'form__input_type_error' : ''}`}
+                        className={`form_input ${errors.title ? 'form_input_type_error' : ''}`}
                         required
                         minLength="2"
                         maxLength="30"
                         onChange={handleChange}
                     />
-                    <span className={`form__input-error ${errors.title ? 'form__input-error_active' : ''}`}>{errors.title}</span>
+                    <span className={`form_input-error ${errors.title ? 'form_input-error_active' : ''}`}>{errors.title}</span>
                 </label>
-                <label className="form__field">
+                <label className="form_field">
                     <input
                         type="url"
                         name="link"
                         value={values.link || ""}
                         placeholder="Ссылка на картинку"
-                        className={`form__input ${errors.link ? 'form__input_type_error' : ''}`}
+                        className={`form_input ${errors.link ? 'form_input_type_error' : ''}`}
                         required
                         onChange={handleChange}
                     />
-                    <span className={`form__input-error ${errors.link ? 'form__input-error_active' : ''}`}>{errors.link}</span>
+                    <span className={`form_input-error ${errors.link ? 'form_input-error_active' : ''}`}>{errors.link}</span>
                 </label>
             </fieldset>
         </PopupWithForm>

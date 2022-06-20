@@ -18,7 +18,7 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick, cards, onC
                 <div className="profile_info">
                     <div className="profile_container">
                         <h1 className="profile_name appear text-cut">{currentUser.name}</h1>
-                        <button type="button" aria-label="Edit" className="profile__btn-edit" onClick={onEditProfile}></button>
+                        <button type="button" aria-label="Edit" className="profile_btn-edit" onClick={onEditProfile}></button>
                     </div>
                     <p className="profile_about appear text-cut">{currentUser.about}</p>
                 </div>

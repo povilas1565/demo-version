@@ -25,8 +25,8 @@ function EditAvatarPopup({isOpen, onClose, onUpdateAvatar, isLoading }) {
             onSubmit={handleSubmit}
             buttonSubmitState={isValid}
         >
-            <fieldset className="form__set">
-                <label className="form__field">
+            <fieldset className="form_set">
+                <label className="form_field">
                     <input
                         type="url"
                         name="link"
